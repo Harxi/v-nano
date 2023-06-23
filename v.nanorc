@@ -1,0 +1,28 @@
+syntax vlang "\.(v|c.v)$"
+comment "//"
+
+# Strings and char
+color brightyellow ""([^"\]|\\.)*"|'([^'\]|\\.)*'"
+color brightgreen "`([^`\]|\\.)*`"
+
+# Keywords
+color pink "\<(as|asm|assert|atomic|break|const|continue|defer|else|embed|enum|false|fn|for|go|goto|if|import|in|interface|is|lock|match|module|mut|none|or|pub|return|rlock|select|shared|sizeof|static|struct|true|type|typeof|union|unsafe|__globals)\>"
+
+# Types
+color pink "\<(bool|i(8|16|32|64|128)|int|byte|u(8|16|32|64|128)|rune|any(_int|_float)?|(byte|void|char)ptr|size_t)\>"
+
+# Operators
+color brightred "(\+|-|\*|/|%|~|&|(\|)|^|!|&&|!=|<<|>>|<|>|==|<=|>=|(\|\|)|<<=|>>=|\+=|-=|\*=|/=|%=|^=|\.\.\.|:=|=|\?)"
+
+# Comments.
+color brightblue "//.*"
+color brightblue start="/\*" end="\*/"
+
+# Conditional compilation
+color brightcyan "\$([a-zA-Z._0-9])+"
+
+# Flag
+color brightblue "\#([a-zA-Z._0-9])+"
+
+# Pseudo variables
+color pink "\@([a-zA-Z._0-9])+"
