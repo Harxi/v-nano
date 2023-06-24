@@ -17,7 +17,7 @@ color rosy "\<[0-9]+\>"
 color pink "\<(bool|i(8|16|32|64|128)|int|byte|u(8|16|32|64|128)|rune|any(_int|_float)?|(byte|void|char)ptr|size_t|string)\>"
 
 # Operators
-color brightred "(\+|-|\*|/|%|~|&|(\|)|^|!|&&|!=|<<|>>|<|>|==|<=|>=|(\|\|)|<<=|>>=|\+=|-=|\*=|/=|%=|^=|\.\.\.|:=|=|\?|\.)"
+color brightred "(\+|-|\*|/|%|~|&|(\|)|^|!|&&|!=|<<|>>|<|>|==|<=|>=|(\|\|)|<<=|>>=|\+=|-=|\*=|/=|%=|^=|:=|=|\?|\.)"
 
 # Conditional compilation
 color brightblue "\$([a-zA-Z._0-9])+"
