@@ -1,4 +1,3 @@
-
 syntax vlang "\.(v|c.v|.vsh)$"
 comment "//"
 
