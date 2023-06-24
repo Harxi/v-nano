@@ -1,5 +1,5 @@
 
-syntax vlang "\.(v|c.v)$"
+syntax vlang "\.(v|c.v|.vsh)$"
 comment "//"
 
 # Function
