@@ -1,28 +1,41 @@
+
 syntax vlang "\.(v|c.v)$"
 comment "//"
 
-# Strings and char
-color brightyellow ""([^"\]|\\.)*"|'([^'\]|\\.)*'"
-color brightgreen "`([^`\]|\\.)*`"
+# Function
+# color pink "fn [a-zA-Z._0-9]+"
 
 # Keywords
-color pink "\<(as|asm|assert|atomic|break|const|continue|defer|else|embed|enum|false|fn|for|go|goto|if|import|in|interface|is|lock|match|module|mut|none|or|pub|return|rlock|select|shared|sizeof|static|struct|true|type|typeof|union|unsafe|__globals)\>"
+color bold,pink "\<(as|asm|assert|atomic|break|const|continue|defer|else|embed|enum|false|fn|for|go|goto|if|import|in|interface|is|lock|match|module|mut|none|or|pub|return|rlock|select|shared|sizeof|static|struct|true|type|typeof|union|unsafe|__globals)\>"
+
+# Literals
+color rosy "\<([0-9]+|0[oO][0-7]+|0[xX][[:xdigit:]]+)\>"
+color rosy "\<[0-9]+\.[0-9]*([eE][+-]?[0-9]+)?\>"
+color rosy "\<[0-9]+[eE][+-]?[0-9]+\>"
+color rosy "\<[0-9]+\>"
 
 # Types
-color pink "\<(bool|i(8|16|32|64|128)|int|byte|u(8|16|32|64|128)|rune|any(_int|_float)?|(byte|void|char)ptr|size_t)\>"
+color pink "\<(bool|i(8|16|32|64|128)|int|byte|u(8|16|32|64|128)|rune|any(_int|_float)?|(byte|void|char)ptr|size_t|string)\>"
 
 # Operators
-color brightred "(\+|-|\*|/|%|~|&|(\|)|^|!|&&|!=|<<|>>|<|>|==|<=|>=|(\|\|)|<<=|>>=|\+=|-=|\*=|/=|%=|^=|\.\.\.|:=|=|\?)"
-
-# Comments.
-color brightblue "//.*"
-color brightblue start="/\*" end="\*/"
+color brightred "(\+|-|\*|/|%|~|&|(\|)|^|!|&&|!=|<<|>>|<|>|==|<=|>=|(\|\|)|<<=|>>=|\+=|-=|\*=|/=|%=|^=|\.\.\.|:=|=|\?|\.)"
 
 # Conditional compilation
-color brightcyan "\$([a-zA-Z._0-9])+"
+color brightblue "\$([a-zA-Z._0-9])+"
 
 # Flag
 color brightblue "\#([a-zA-Z._0-9])+"
 
+# Upper case words
+color rosy "[A-Z][A-Za-z0-9]+"
+
 # Pseudo variables
 color pink "\@([a-zA-Z._0-9])+"
+
+# String and char
+color brightyellow ""([^"\]|\\.)*"|'([^'\]|\\.)*'"
+color brightgreen "`([^`\]|\\.)*`"
+
+# Coments
+color brightblue "//.*"
+color brightblue start="/\*" end="\*/"
