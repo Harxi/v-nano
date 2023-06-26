@@ -16,7 +16,7 @@ color pink "\<(bool|i(8|16|32|64|128)|int|byte|u(8|16|32|64|128)|rune|any(_int|_
 # Operators
 color brightred "(\+|-|\*|/|%|~|&|(\|)|^|!|<|>|:=|=|\?|\.)"
 
-# Conditional compilation
+# Reflection
 color brightblue "\$([a-zA-Z._0-9])+"
 
 # Flag
