@@ -11,7 +11,7 @@ color rosy "\<[0-9]+[eE][+-]?[0-9]+\>"
 color rosy "\<[0-9]+\>"
 
 # Types
-color bold,pink "\<(bool|i(8|16|32|64|128)|int|byte|u(8|16|32|64|128)|rune|any(_int|_float)?|(byte|void|char)ptr|size_t|string)\>"
+color bold,pink "\<(bool|string|int|i(8|16|32|64|128)|u(8|16|32|64|128)|rune|f(32|64)|isize|usize|voidptr|any)\>"
 
 # Operators
 color brightred "(\+|-|\*|/|%|~|&|(\|)|^|!|<|>|:=|=|\?|\.)"
