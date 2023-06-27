@@ -2,7 +2,7 @@ syntax vlang "\.(v|c.v|.vsh|.vv)$"
 comment "//"
 
 # Keywords
-color bold,pink "\<(as|asm|assert|atomic|break|const|continue|defer|else|embed|enum|false|fn|for|go|goto|if|import|in|interface|is|lock|match|module|mut|none|or|pub|return|rlock|select|shared|sizeof|static|struct|true|type|typeof|union|unsafe|__global)\>"
+color bold,pink "\<(as|asm|assert|atomic|break|const|continue|defer|else|enum|false|fn|for|go|goto|if|import|in|interface|is|isreftype|lock|match|module|mut|none|or|pub|return|rlock|select|shared|sizeof|spawn|static|struct|true|type|typeof|union|unsafe|volatile|__global|__offsetof)\>"
 
 # Literals
 color rosy "\<([0-9]+|0[oO][0-7]+|0[xX][[:xdigit:]]+)\>"
