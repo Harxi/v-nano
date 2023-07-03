@@ -1,2 +1,2 @@
 # vlang-nanorc
-Vang syntax highlighting for nano
+Vlang syntax highlighting for nano
