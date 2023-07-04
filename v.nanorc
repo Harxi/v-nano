@@ -1,4 +1,10 @@
-syntax vlang "\.(v|c.v|.vsh|.vv)$"
+# The syntax highlight for V
+
+# Author : HARXI
+# Version: 1.0.0
+# License: MIT
+
+syntax v "\.(v|c.v|.vsh|.vv)$"
 
 # Operators
 color brightred "(\+|-|\*|/|%|~|&|(\|)|^|!|<|>|:=|=|\?|\.)"
@@ -15,16 +21,16 @@ color rosy "\<[0-9]+\>"
 # Types
 color bold,pink "\<(bool|string|int|i(8|16|32|64|128)|u(8|16|32|64|128)|rune|f(32|64)|isize|usize|voidptr|any)\>"
 
-# Reflection
+# Compile time
 color brightblue "\$([a-zA-Z._0-9])+"
 
-# Flag
+# Flags
 color brightblue "\#([a-zA-Z._0-9])+"
 
 # Upper case words
 color rosy "[A-Z][A-Za-z0-9_]+"
 
-# Pseudo variables
+# Compile time constants
 color pink "\@([a-zA-Z._0-9])+"
 
 # String and char
